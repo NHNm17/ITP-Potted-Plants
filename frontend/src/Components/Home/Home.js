@@ -1,12 +1,9 @@
 import React from 'react';
 import './Home.css';
-import Nav from '../Nav/Nav';
-import Footer from '../Footer/Footer';
 
 function Home() { 
   return (
     <div className="home-container">
-      <Nav/>
       
       {/* Hero Section */}
       <section className="hero-section">
@@ -22,20 +19,19 @@ function Home() {
             <img src="Spider plant.jpg" alt="Spider Plant" />
             <h3>Spider Plant <pre>Rs.600</pre></h3>
             <p>Air purifying & easy maintenance</p>
-            <button className="buy-now">Buy Now</button>
             <button className="add-cart">Add to Cart</button>
+            <button className="buy-now">Buy Now</button>
           </div>
           <div className="product-card">
             <img src="Nuga plant.jpg" alt="Nuga Plant" />
             <h3>Nuga Plant <pre>Rs.600</pre></h3>
             <p>Brings good luck & prosperity</p>
-            <button className="buy-now">Buy Now</button>
             <button className="add-cart">Add to Cart</button>
+            <button className="buy-now">Buy Now</button>
           </div>
         </div>
       </section>
 
-      <Footer/>
     </div>
   );
 }

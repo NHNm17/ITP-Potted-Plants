@@ -1,0 +1,87 @@
+/* Container styling */
+.container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+   box-shadow: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjusts the element's position to truly center it */
+  }
+  
+  /* Heading styling */
+  .heading {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .button {
+    width: 100%;
+    padding: 10px;
+    background-color:#3498db; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .button:hover {
+    background-color: #3498db;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Result display styling */
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result h3 {
+    color: #2e7d32;
+  }
+  
+  .result p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .result .back-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .result .back-button:hover {
+    background-color: #2e7d32;
+  }

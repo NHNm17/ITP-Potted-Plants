@@ -1,8 +1,11 @@
 import React from "react";
 import "./Nav.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function Nav() {
+function Nav({ cartCount }) {
+  const navigate = useNavigate();
+
   return (
     <div>
       {/* Header Section */}
@@ -15,9 +18,9 @@ function Nav() {
         <h6 className="auth-links">
           Hi, <a href="/login">Login</a> OR <a href="/signup">Sign Up</a>
         </h6>
-        <a href="/cart" className="cart-icon">
-          <img src="cart.png" alt="Cart" />
-        </a>
+        <button className="cart-button" onClick={() => navigate('/cart')}>
+        🛒 Cart <span className="cart-count">{cartCount}</span>
+        </button>
       </div>
 
       {/* Navigation Bar */}
@@ -43,7 +46,7 @@ function Nav() {
           </Link>
         </li>
         <li className="nav-bar">
-        <Link to="/supportAndFeedback" className="active supportandfeedback -a">
+        <Link to="/Feedback" className="active feedback -a">
           <h4>Support and Feedback</h4>
           </Link>
         </li>
