@@ -7,11 +7,10 @@ function Footer() {
             {/* Footer Section */}
       <footer className="footer">
         <ul>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact</a>
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#T&C">Terms and Conditions</a>
-          <a href="#news">News</a>
+          <a href="aboutus">About Us</a>
+          <a href="contactus">Contact</a>
+          <a href="privacypolicy">Privacy Policy</a>
+          <a href="termsandcondition">Terms and Conditions</a>
         </ul>
         <p>&copy; 2025 Potted Plants SL. All rights reserved.</p>
         <div className="social-links">

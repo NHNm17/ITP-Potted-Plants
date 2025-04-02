@@ -6,6 +6,7 @@ const cors = require('cors');
 const productRoutes = require('./Route/products');
 const feedbackRoutes = require('./Route/feedback');
 const noteRoutes = require('./Route/notes');
+const router = require("./Route/deliveryRoute");
 
 const app = express();
 
@@ -16,6 +17,9 @@ app.use(express.json());
 app.use('/api/products', productRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/notes', noteRoutes);
+app.use('/Delivery', router);
+app.use('/Wishlist', router);
+
 
 
 mongoose.connect("mongodb+srv://admin:PPvW6RAI1PUBcOwW@cluster0.cdmpb.mongodb.net/")

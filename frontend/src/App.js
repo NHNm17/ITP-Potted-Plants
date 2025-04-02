@@ -11,8 +11,17 @@ import Nav from "./Components/Nav/Nav";
 import Footer from "./Components/Footer/Footer";
 import AIChatbot from "./Components/AIchatbot/AIchatbot";
 import Checkout from "./Components/Checkout/Checkout";
-import PayHereGateway from "./Components/PayHereGateway/PayHereGateway";
 import Home from "./Components/Home/Home";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import PrivacyPolicy from "./Components/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "./Components/TermsAndCondition/TermsAndCondition";
+import Success from "./Components/Checkout/Success/Success";
+import AddDelivery from "./Components/DeliveryScheduling/AddDelivery";
+import ShowDelivery from "./Components/DeliveryScheduling/ShowDelivery";
+import UpdateDelivery from "./Components/DeliveryScheduling/UpdateDelivery";
+import DeliveryTracking from "./Components/DeliveryTracking/DeliveryTracking";
+import OrderSucess from "./Components/DeliveryScheduling/OrderSucess";
 
 
 function App() {
@@ -32,7 +41,18 @@ function App() {
           <Route path="/feedback" element={<Feedback/>}/>
           <Route path="/AIchatbot" element={<AIChatbot/>}/>
           <Route path="/checkout" element={<Checkout/>}/>
-          <Route path="/payhere-gateway" element={<PayHereGateway/>}/>
+          <Route path="/aboutus" element={<AboutUs/>}/>
+          <Route path="/contactus" element={<ContactUs/>}/>
+          <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
+          <Route path="/termsandcondition" element={<TermsAndConditions/>}/>
+          <Route path="/success" element={<Success/>}/>
+          <Route path="/adddelivery" element={<AddDelivery/>}/>
+          <Route path="/DeliveryInfo" element={<ShowDelivery/>}/>
+          <Route path="/UpdateDelivery/:id" element={<UpdateDelivery/>}/>
+          <Route path="/deliverytracking" element={<DeliveryTracking/>}/>
+          <Route path="/ordersucess" element={<OrderSucess/>}/>
+
+
 
         </Routes>
       </React.Fragment>
